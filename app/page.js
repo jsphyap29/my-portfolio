@@ -19,7 +19,7 @@ import Footer from "./footer";
 
 export default function Home() {
 return (
-<div className="font-Montserrat">
+<div className="custom-font">
   <div class="custom-shape-divider-bottom-1700807598">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
       <path

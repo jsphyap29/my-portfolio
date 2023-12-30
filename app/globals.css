@@ -52,6 +52,16 @@ body {
     width: 1200px;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(../public/Montserrat.ttf);
+  }
+
+  .custom-font {
+    font-family: myFirstFont;
+  }
+  
+
 #section_footer {
     width: 100%;
   
