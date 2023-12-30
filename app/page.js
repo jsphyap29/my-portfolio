@@ -1,113 +1,200 @@
-import Image from 'next/image'
+import Icons from "./icons"
+import Image from "next/image";
+import devjsph from '../public/2213.jpg'
+import design from '../public/design.png'
+import web1 from '../public/web1.jpg'
+import web2 from '../public/web2.jpg'
+import bg2 from '../public/bg2.png'
+import web4 from '../public/web4.jpg'
+import web11 from '../public/web11.jpg'
+import web9 from '../public/web9.png'
+import Support from "./support";
+import photography from '../public/photography.png'
+import montage from '../public/montage.png'
+import ThemeToggle from "./ThemeToggle";
+import ".//globals.css";
+import 'animate.css';
+import Footer from "./footer";
+
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
+return (
+<div className="font-Montserrat">
+  <div class="custom-shape-divider-bottom-1700807598">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+        class="shape-fill"></path>
+    </svg>
+  </div>
+  <main className="">
+    <header className="bg-white sm:px-30 md:px-40 lg:px-40 xl:px-40 dark:bg-dark transition-all">
+      <section className='min-h-screen'>
+        <nav className='cust-nav pt-10 mb-1 flex justify-between ml-10'>
+          <h1 className="animate__animated animate__fadeInLeft text-xl dark:text-white">@jsphyaps</h1>
+          <ul className="nav-list flex items-center">
+            <li>
+              <ThemeToggle />
+            </li>
+            <li>
+                <div className="flex justify-center items-center ">
+                <a className="flex justify-center items-center w-20 mx-10 bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 rounded-md"
+                  href="https://drive.google.com/file/d/1McAmBnynUEFMZUPlx9q8rFDGtXV_ZHMo/view?usp=sharing"
+                  target="blank_">Resume</a>
+                </div>
+            </li>
+          </ul>
+        </nav>
+
+        <div className="flex justify-center">
+          <Image src={devjsph} className="relative mx-auto rounded-full w-60 h-65 mt-20 shadow-lg " />
+        </div>
+
+        <div className="text-center p-10 animate__animated animate__fadeInUp ">
+          <h2 className=" text-3xl py-2 text-teal-600 font-bold lg:text-3xl xl:text-6xl dark:text-teal-300">Joseph Andrei Yap</h2>
+          <h3 className="text-xl py-2 md:text-lg dark:text-gray-400">Video Editor/Creator</h3>
+          <p className="text-sm leading-5 text-gray-800 dark:text-white">I am a
+            talented hardworking
+            experienced video editor,
+            photographer, and video grapher, I am adept at handling multiple tasks
+            on a daily basis competently and at working well under pressure</p>
+        </div>
+        <div className="flex justify-center pb-5">
+          <div className="w-56">
+          <div
+              className="animate__animated animate__fadeIn animate__delay-1s flex gap-10 text-gray-600 dark:text-gray-300">
+              <Icons />
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </header>
+
+
+    <section className="second-sec bg-gradient-to-b from-gray-300 to-teal-100 bg-two-d px-10 sm:px-20 md:px-20 lg:px-40 xl:px-40 dark:bg-two-d transition-all ">
+      <div>
+        <h3 className="text-white text text-7xl  py-10 pt-20 font-bold xl:text-center md:text-4xl text-center sm:text-4xl text-center dark:text-black ">Services Offered</h3>
+        <p className="text-md py-2 leading-8 text-white dark:text-black">
+          Unlock a world of creative possibilities with my diverse range of services, spanning Video Animation, Photo
+          and Videography, and Video Editing, where every project is meticulously crafted to captivate, communicate, and
+          leave a lasting impact.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <p className="text-md py-2 leading-8 text-white dark:text-black"> I craft seamless, captivating narratives
+          tailored to your
+          vision. Expect creative excellence, timely delivery, and collaborative spirit.</p>
+      </div>
+      <div className="justify-center items-center lg:flex gap-10 py-10 xl:flex gap-10 py-10">
+        <div className="text-black bg-slate-200 text-center py-14 px-14 rounded-xl my-10 dark:bg-gray-700 shadow-lg shadow-blue-500/30">
+          <div>
+            <h3 className="text-lg font-extrabold dark:text-white">Video Animation</h3>
+            <div className="img-wrap flex justify-center">
+              <Image className="my-10" src={design} width={100} height={100} />
+            </div>
+            <p className="dark:text-white">Creative Motion Mastery</p>
+            <h4 className="py-4 text-teal-600 dark:text-teal-300">Design tools I use</h4>
+            <div className="text-gray-500 py-1 dark:text-gray-400">
+              <p>Adobe After Effects</p>
+              <p>DaVinci Resolve</p>
+              <p>Adobe Premiere Pro</p>
+            </div>
+          </div>
+        </div>
+        <div className="text-black bg-slate-200 text-center py-14 px-14 rounded-xl my-10 dark:bg-gray-700 shadow-lg shadow-blue-500/30">
+          <div>
+          <h3 className="text-lg font-extrabold dark:text-white">Video and Photography</h3>
+            <div className="img-wrap flex flex-nowrap justify-center">
+              <Image className="my-10" src={photography} width={100} height={100} />
+            </div>
+            <p className="dark:text-white">Visual Storytelling Excellence</p>
+            <h4 className="py-4 text-teal-600 dark:text-teal-300">Design tools I use</h4>
+            <div className="text-gray-500 py-1 dark:text-gray-400">
+              <p>DJI RS3 MINI</p>
+              <p>SONY A7IV</p>
+              <p>CANON 650d</p>
+            </div>
+          </div>
+        </div>
+        <div className="text-black bg-slate-200 text-center py-14 px-14 rounded-xl dark:bg-gray-700 shadow-lg shadow-blue-500/30">
+        <div>
+        <h3 className="text-lg font-extrabold dark:text-white">Video Editing</h3>
+          <div className="img-wrap flex flex-nowrap justify-center">
+            <Image className="my-10" src={montage} width={100} height={100} />
+          </div>
+          
+          <p className="dark:text-white">Precision in Post.</p>
+          <h4 className="py-4 text-teal-600 dark:text-teal-300">Design tools I use</h4>
+          <div className="text-gray-500 py-1 dark:text-gray-400">
+            <p>DaVinci Resolve</p>
+            <p>Adobe Premiere Pro</p>
+            <p>Final Cut Pro</p>
+          </div>
         </div>
       </div>
+      </div>
+    </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+    <section className="bg-white px-10 md:px-20 lg:px-40 dark:bg-dark transition-all">
+      <div>
+        <h3 className="text text-center text-5xl py-5 font-bold pt-10 dark:text-white">Portfolio</h3>
+        <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">To work in a dynamic professional
+          environment with a growing
+          organization and utilize my creativity and innovative
+          thinking for benefit of the organization and myself.
+          Step into a world where memories transform into cinematic treasures. As a skilled video editor and videography
+          photographer, I offer tailored services that bring your moments to life.
+        </p>
+        <p className="text-md py-2 leading-8 text-gray-800 dark:text-white"> I craft seamless, captivating narratives
+          tailored to your
+          vision. Expect creative excellence, timely delivery, and collaborative spirit.</p>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="flex flex-col gap-10 py-10 xl:flex-row xl:flex-wrap lg:flex-row lg:flex-wrap md:flex-row md:flex-wrap ">
+        <div className="basis-1/3 flex-1">
+          <a href="https://bonaudswedding.pixieset.com/bonandaudrey/" target="_blank">
+            <Image src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" />
+          </a>
+          <p className="port-desc dark:text-white">PRENUP WEDDING</p>
+        </div>
+        <div className="basis-1/3 flex-1">
+          <a href="">
+            <Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" />
+          </a>
+          <p className="port-desc dark:text-white ">CARS</p>
+        </div>
+        <div className="basis-1/3 flex-1">
+          <a href="">
+            <Image src={web11} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" />
+          </a>
+          <p className="port-desc dark:text-white">VACATION</p>
+        </div>
+        <div className="basis-1/3 flex-1">
+          <a href="">
+            <Image src={bg2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" />
+          </a>
+          <p className="port-desc dark:text-white">EXPLAINER</p>
+        </div>
+        <div className="basis-1/3 flex-1">
+          <a href="">
+            <Image src={web4} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" />
+          </a>
+          <p className="port-desc dark:text-white">EVENTS</p>
+        </div>
+        <div className="basis-1/3 flex-1">
+          <a href="">
+            <Image src={web9} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive" />
+          </a>
+          <p className="port-desc dark:text-white">RANDOM</p>
+        </div>
       </div>
-    </main>
-  )
+    </section>
+
+
+  </main>
+  <Support/>
+  <Footer />
+
+
+</div>
+)
 }

@@ -2,26 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
 }
+
+.custom-shape-divider-bottom-1700807598 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1700807598 svg {
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 95px;
+}
+
+.custom-shape-divider-bottom-1700807598 .shape-fill {
+    fill: rgb(209 213 219);
+}
+
+.img-wrap {   
+    margin: 0 auto;
+    width: 70px;
+    height: 100%;
+}
+
+.port-desc {
+    text-align: center;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.cards {
+    margin: 0 auto;
+    max-width: 80%;
+    width: 1200px;
+}
+
+#section_footer {
+    width: 100%;
+  
+    a, span {
+      color: #fff;
+      font-size: .75em;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+  
+    p {
+      color: #fff;
+      font-size: .5em;
+    }
+  }
+
+
+
+
+
+@media (max-width: 446px) {
+    .cust-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cust-nav h1 {
+        font-size: 30px;
+    }
+    
+    .nav-list {
+        display: flex;
+        padding: 25px 0;
+    }
+}
+
+@media (max-width: 570px){
+    .custom-shape-divider-bottom-1700807598 {
+        display: none;
+    }
+
+    .custom-shape-divider-bottom-1700807598 svg {
+        display: none;
+    }
+    
+    .custom-shape-divider-bottom-1700807598 .shape-fill {
+        display: none;
+    }
+
+}
+
