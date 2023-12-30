@@ -85,23 +85,6 @@ body {
 
 
 
-@media (max-width: 446px) {
-    .cust-nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cust-nav h1 {
-        font-size: 30px;
-    }
-    
-    .nav-list {
-        display: flex;
-        padding: 25px 0;
-    }
-}
 
 @media (max-width: 570px){
     .custom-shape-divider-bottom-1700807598 {

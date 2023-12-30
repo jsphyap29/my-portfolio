@@ -31,7 +31,7 @@ return (
     <header className="bg-white sm:px-30 md:px-40 lg:px-40 xl:px-40 dark:bg-dark transition-all">
       <section className='min-h-screen'>
         <nav className='cust-nav pt-10 mb-1 flex justify-between ml-10'>
-          <h1 className="animate__animated animate__fadeInLeft text-xl dark:text-white">@jsphyaps</h1>
+          <h1 className="animate__animated animate__fadeInLeft text-xl flex items-center dark:text-white">@jsphyaps</h1>
           <ul className="nav-list flex items-center">
             <li>
               <ThemeToggle />
